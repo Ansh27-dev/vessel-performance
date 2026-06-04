@@ -14,13 +14,8 @@ The platform helps shipping operators, chartering teams, technical teams, and ve
 - [How It Works](#how-it-works)
 - [System Modules](#system-modules)
 - [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
 - [Key Analytics Logic](#key-analytics-logic)
-- [Setup and Run](#setup-and-run)
-- [Usage](#usage)
-- [Future Scope](#future-scope)
 - [Live Demo](#live-demo)
-- [Repository](#repository)
 
 ---
 
@@ -118,3 +113,48 @@ VoyageIQ currently focuses on **Excel-based operational reports**, especially no
 | Deployment | Netlify |
 
 ---
+
+## Key Analytics Logic
+
+VoyageIQ analyzes vessel performance using the following metrics:
+
+Performance Monitoring
+Actual Speed vs CP Warranted Speed
+Daily Fuel Consumption
+Average Daily LSFO
+Idle Days at Anchorage
+Voyage Distance
+Speed Variance
+Fuel Analysis
+Metric	Meaning
+ME LSFO	Main Engine fuel consumption
+AE LSFO	Auxiliary Engine fuel consumption
+Boiler LSFO	Boiler fuel consumption
+Total LSFO	Combined daily LSFO usage
+MGO	Marine Gas Oil consumption
+ROB	Remaining On Board fuel
+Weather Analysis
+
+The system evaluates:
+
+Beaufort scale
+wind speed
+wind direction
+current direction
+weather-related voyage influence
+Route Optimization
+
+VoyageIQ compares route alternatives using:
+
+route distance
+estimated fuel usage
+weather risk score
+ETA calculation
+route efficiency score
+
+---
+
+## Live Demo
+
+Live URL:
+https://vessel-performance.netlify.app
