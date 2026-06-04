@@ -1,0 +1,162 @@
+/* ============================================================
+   CHARTS CSS - Chart-specific styles and containers
+   ============================================================ */
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 8px;
+}
+
+.chart-container.tall {
+    height: 380px;
+}
+
+.chart-container.short {
+    height: 200px;
+}
+
+.chart-container.mini {
+    height: 120px;
+}
+
+.chart-container.gauge {
+    height: 220px;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.chart-container.radar {
+    height: 350px;
+}
+
+/* Map containers */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.map-container.large {
+    height: 500px;
+}
+
+.map-container.planner {
+    height: 380px;
+}
+
+/* Leaflet dark popup styling */
+.dark-popup .leaflet-popup-content-wrapper {
+    background: rgba(10, 14, 39, 0.95);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    color: #e2e8f0;
+}
+
+.dark-popup .leaflet-popup-tip {
+    background: rgba(10, 14, 39, 0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.dark-popup .leaflet-popup-content {
+    margin: 10px 14px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.leaflet-container {
+    background: #0a0e27 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.leaflet-control-zoom a {
+    background: rgba(15, 23, 60, 0.9) !important;
+    color: #e2e8f0 !important;
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background: rgba(0, 212, 255, 0.2) !important;
+}
+
+.leaflet-control-attribution {
+    background: rgba(10, 14, 39, 0.8) !important;
+    color: #64748b !important;
+    font-size: 9px !important;
+}
+
+.leaflet-control-attribution a {
+    color: #94a3b8 !important;
+}
+
+/* Chart card headers */
+.chart-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px 8px;
+}
+
+.chart-card-header h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chart-card-header h3 i {
+    color: #00d4ff;
+    font-size: 13px;
+}
+
+.chart-card-header .chart-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.chart-badge.green {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.chart-badge.amber {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.chart-badge.red {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.chart-badge.cyan {
+    background: rgba(0, 212, 255, 0.15);
+    color: #00d4ff;
+}
+
+.chart-badge.purple {
+    background: rgba(124, 58, 237, 0.15);
+    color: #7c3aed;
+}
+
+/* Custom marker styles */
+.custom-map-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+.route-label {
+    background: transparent !important;
+    border: none !important;
+}
